@@ -1,2 +1,2 @@
-gosizer
+gosmaller
 =======
