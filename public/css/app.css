@@ -1,0 +1,39 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: 'Satisfy', cursive;
+}
+
+a{
+	color:#5A5A66;
+}
+a:hover, a:focus{
+	color:#A6BBD4;
+}
+.jumbotron{
+	background-color:#6298CC;
+	color:#5A5A66;
+}
+
+.no-padding{
+	padding-left:0em;
+	padding-right:0em;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.container-full{
+	margin:0 atuo;
+	width:100%;
+}
+
+.credit{
+	color:#5A5A66;
+}
+.credit h4{
+	font-family: 'Open Sans', sans-serif;
+}

@@ -3,17 +3,64 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Go-Smaller</title>
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/readable/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Satisfy|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/app.css">
 </head>
 <body>
 	<script type="text/x-handlebars">
-		<div class="site-wrapper">
-			<div class="site-wrapper-inner">
-				Hello ember.js
+	<div class="site-wrapper-inner container-full">
+		{{render "header"}}
+		{{render "content"}}
+		{{render "footer"}}
+	</div>
+	</script>
+	
+	<script type="text/x-handlebars" data-template-name='header'>
+	<div id="header" class="jumbotron text-center">
+		<h1>Go-Smaller</h1>
+		<h2><i class="fa fa-picture-o fa-2x"></i>&nbsp;&nbsp;<i class="fa fa-arrow-right 1x"></i>&nbsp;&nbsp;<i class="fa fa-picture-o"></i></h2>
+	</div>
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="content">
+	<div id="content" class="container">
+		<div class="container">
+			&nbsp;
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<form class="form-horizontal" role="form">
+						<div class='form-group'>
+							<label class="col-sm-3 no-padding text-right" for="fileUpload"><i class="fa fa-chevron-right"></i></label>
+							<div class="col-sm-9 no-padding"><input type="file" id="fileUpload" placeholder="Select Image"></div>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-4"></div>
 			</div>
 		</div>
+	</div>
+	</script>
+
+	<script type="text/x-handlebars" data-template-name='footer'>
+	<div id="footer" class="container">
+	    <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color:#6298CC;">
+	        <div class="navbar-inner navbar-content-center text-right">
+	            <label class="credit">
+	            	<h4>&copy;{{currentDate}},<a href="//www.corey-weiner.com">Corey Weiner</a>
+	            	<a href="https://www.github.com/cjweiner"><i class="fa fa-github-alt 2x"></i></a>
+	            	<a href="https://www.twitter.com/cjweiner"><i class="fa fa-twitter 2x"></i></a>
+	            	</h4>
+            	</label>
+	        </div>
+	    </nav>
+	</div>
 	</script>
 	<script src="/js/lib/jquery.js"></script>
 	<script src="/js/lib/handlebars.js"></script>
