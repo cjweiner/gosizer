@@ -2,7 +2,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+h1, h2, h3, h4, h5, h6{
 	font-family: 'Satisfy', cursive;
 }
 
@@ -18,8 +18,8 @@ a:hover, a:focus{
 }
 
 .no-padding{
-	padding-left:0em;
-	padding-right:0em;
+	padding-left:0;
+	padding-right:0;
 }
 
 .align-right{
@@ -27,13 +27,13 @@ a:hover, a:focus{
 }
 
 .container-full{
-	margin:0 atuo;
+	margin:0 auto;
 	width:100%;
 }
 
 .credit{
 	color:#5A5A66;
 }
-.credit h4{
+.credit h5{
 	font-family: 'Open Sans', sans-serif;
 }
